@@ -29,7 +29,7 @@ servicesBtn3.addEventListener("click", () => {
 const images = [
       "img/download (12).jfif",
       "img/Hospital Wayfinding Display.jfif",
-      "img/working for health care.jfif",
+      "img/Blurred Emergency Room Background – Abstract Hospital Interior.jfif",
       "img/download (13).jfif"
     ];
 
@@ -50,6 +50,10 @@ const images = [
     });
     text.addEventListener("mouseleave" , () => {
       text.textContent ="who we are";
+     
     });
+ 
+
+    
 
    

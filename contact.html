@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+    <nav  class="shadow-xl bg-white fixed z-50 top-0 left-0 w-full ">
+
+    <div class="max-w-7xl mx-auto px-6  ">
+
+      <div class="flex justify-between items-center h-16">
+
+
+        <div class="text-xl font-bold text-red-800">
+          NOFIC Abakiliki
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden  lg:flex  space-x-8 items-center">
+          <a  href="./index.html" class="text-red-600">Home</a>
+
+
+          <!-- About Dropdown -->
+          <li class="relative group list-none z-50">
+
+            <a href="#" class="text-red-600">
+              About ▼
+            </a>
+
+            <div
+              class="absolute top-full left-0 w-56 bg-white text-black rounded-lg shadow-xl hidden group-hover:block">
+
+              <a href="./About.html" class="block px-4 py-3 text-black hover:shadow-xl">
+                About NOFIC Abakiliki
+              </a>
+
+              <a href="./Aboutdesk.html" class="block px-4 py-3 text-black hover:shadow-xl">
+                About Medical Director's Desk</a>
+              <a href="./staff.html" class="block px-4 py-3 text-black hover:shadow-xl">
+                Management</a>
+            </div>
+
+          </li>
+          <!-------Department and services dropdown-->
+          <li class="relative group list-none z-50">
+
+            <a href="" class="text-black">
+              Department and services ▼
+            </a>
+
+            <div
+              class="absolute top-full left-0 w-56 bg-white text-black rounded-lg shadow-xl hidden group-hover:block">
+
+              <a href="./dept.html" class="block px-4 py-3 text-black hover:shadow-xl">
+                Department and units
+              </a>
+
+              <a href="./unit.html" class="block px-4 py-3 text-black hover:shadow-xl">
+                Services</a>
+            </div>
+
+          </li>
+          <!------updates dropdown-->
+          <li class="relative group list-none">
+
+            <a href="#" class="hover:text-red-600">
+              updates ▼
+            </a>
+
+            <div
+              class="absolute top-full left-0 w-56 bg-white text-black rounded-lg shadow-xl hidden group-hover:block z-50">
+
+              <a href="./news.html" class="block px-4 py-3 text-black hover:shadow-xl">
+                News
+              </a>
+
+              <a href="#" class="block px-4 py-3 text-black hover:shadow-xl">
+                Publication</a>
+
+              <a href="#" class="block px-4 py-3 text-black hover:shadow-xl">
+                Vaccancy
+              </a>
+
+            </div>
+
+          </li>
+
+          <a href="#training" class="text-black hover:text-red-600">Training</a>
+          <a href="./contact.html" class="text-black hover:text-red-600">Contact us</a>
+          <a href="" class="text-black hover:text-red-600">Donate</a>
+          <a><i class="fa-solid fa-magnifying-glass"></i></a>
+
+
+
+        </div>
+
+
+
+        <!-- Hamburger Button -->
+        <div class=" lg:hidden flex gap-2 items-center ">
+          <button id="menu-btn" class="flex flex-col space-y-1 ">
+            <span class="w-6 h-0.5 bg-black"></span>
+            <span class="w-6 h-0.5 bg-black"></span>
+            <span class="w-6 h-0.5 bg-black"></span>
+          </button>
+          <button> <a><i class="fa-solid fa-magnifying-glass "></i></a></button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden lg:hidden  px-6 pb-4 absolute top-full left-0 z-50 bg-white shadow-xl ">
+
+      <ul class="flex flex-col ">
+
+        <li>
+          <a href="./index.html" class="block px-6 py-4 border-b border-zinc-700 ">
+            Home
+          </a>
+        </li>
+
+        <!-- ABOUT Dropdown -->
+        <li>
+
+          <button id="services-btn"
+            class="w-full text-left px-6 py-4 border-b border-zinc-700 flex justify-between z-50">
+            About ▼
+          </button>
+
+          <div id="services-menu" class="hidden bg-white">
+
+            <a href="./About.html" class="block px-10 py-3 hover:shadow-xl">
+              About NOFIC Abakiliki
+            </a>
+
+            <a href="./Aboutdesk.html" class="block px-10 py-3 hover:shadow-xl">
+              Medical Director Desk
+            </a>
+
+            <a href="./staff.html" class="block px-10 py-3 hover:shadow-xl">
+              Management 
+            </a>
+
+          </div>
+
+        </li>
+        <!-- Department and services dropdown -->
+        <li>
+
+          <button id="services-btn2" class="w-full text-left px-6 py-4 border-b border-zinc-700 flex justify-between  ">
+            Department and services ▼
+          </button>
+
+          <div id="services-menu2" class="hidden bg-white shadow-2xl">
+
+            <a href="./dept.html" class="block px-10 py-3 hover:shadow-xl">
+              Department and Unit.
+            </a>
+
+            <a href="./unit.html" class="block px-10 py-3 hover:shadow-xl">
+              Services
+            </a>
+
+
+          </div>
+
+        </li>
+        <!-----updates dropdown-->
+        <li>
+
+          <button id="services-btn3" class="w-full text-left px-6 py-4 border-b border-zinc-700 flex justify-between ">
+            Updates ▼
+          </button>
+
+          <div id="services-menu3" class="hidden bg-white shadow-2xl">
+
+            <a href="./news.html" class="block px-10 py-3 hover:shadow-xl">
+              News
+            </a>
+
+            <a href="#" class="block px-10 py-3 hover:shadow-xl">
+              Publication</a>
+            <a href="#" class="block px-10 py-3 hover:shadow-xl">
+              Vaccancy</a>
+
+
+          </div>
+
+        </li>
+        <li>
+          <a href="#training" class="block px-6 py-4 border-b border-zinc-700 ">
+            Training
+          </a>
+        </li>
+
+        <li>
+          <a href="./contact.html" class="block px-6 py-4">
+            Contact us
+          </a>
+        </li>
+        <li>
+          <a href="#" class="block px-6 py-4">
+            Donate
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+
+
+  </nav>
+     <!--------mails-->
+  <div  class="h-auto  bg-white mb-10 pt-20">
+    
+    <div class="max-w-7xl mx-auto px-6">
+
+
+
+      <div  class="flex flex-col md:flex-row md:flex-wrap justify-between items-center h-auto gap-2 p-5 ">
+
+        <div class=" shadow-2xl flex flex-col  w-75  bg-white h-auto justify-center items-center p-5">
+
+          <i class="fa-regular fa-hospital"></i>
+
+          <h1 class="text-center font-bold "> Visit Our Hospital</h1>
+
+          <p class="text-center mt-8">KM86, Enugu-Abakaliki Expressway
+            Abakaliki, Ebonyi State, Nigeria.
+          </p>
+        </div>
+
+
+        <div class=" shadow-2xl flex flex-col  w-75  bg-white h-auto justify-center items-center p-5">
+
+          <i class="fa-regular fa-envelope"></i>
+
+          <h1 class="text-center font-extrabold">Mail us</h1>
+
+          <p  class="text-center mt-8">chimnaonuel@gmail.com
+          </p>
+        </div>
+
+
+
+
+
+        <div class=" shadow-2xl flex flex-col  w-75  bg-white h-auto justify-center items-center p-5">
+
+          <i class="fa-solid fa-phone-volume"></i>
+
+          <h1 class="text-center font-extrabold">Call us</h1>
+          <p  class=" text-center mt-8">08169270270</p>
+          <p>mon-sun</p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-----footer-->
+  <footer class="h-auto bg-green-700 p-5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:flex-wrap  justify-between items-center h-auto gap-2  mt-10 ">
+
+        <div class=" flex-col  w-75 p-5  h-50 text-white ">
+          <h1 class="font-extrabold text-2xl">NOFIC</h1>
+          <p class="flex item-center gap-2">
+            <i class="fa-solid fa-location-pin mt-2"></i>KM 86, Enugu-Abakaliki Expressway, Abakaliki, Ebonyi State.</p>
+          <p class="flex item-center gap-2"><i class="fa-regular fa-envelope mt-1"></i>chimnaonuel@gmail.com</p>
+          <p class="flex item-center gap-2"><i class="fa-solid fa-phone-volume mt-1"></i>08167448562</p>
+        </div>
+
+
+
+        <div class=" flex-col  w-75 p-5  h-50 text-white ">
+          <h1 class="font-extrabold text-2xl">About us</h1>
+          <ul>
+            <li>About</li>
+            <li>Careers</li>
+            <li>services</li>
+            <li>FAQ</li>
+            <li>Appointment</li>
+            <li>Events</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+
+
+
+
+
+
+        <div class=" flex-col  w-75 p-5  h-50 text-white ">
+          <h1 class="font-extrabold text-2xl">Trending Events</h1>
+          <ul>
+            <li>NOFIC Exam List for…</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-calendar"></i>June 15, 2026</li>
+            <li>NOFIC 2026 Shortlisted Interns…</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-calendar"></i>June 10, 2026</li>
+            <li>NOFIC Abakaliki 2026 Internship…</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-calendar"></i>June 10, 2026</li>
+
+          </ul>
+        </div>
+
+
+        <div class=" flex-col  w-75 p-5  h-50  text-white ">
+          <h1 class="font-extrabold text-2xl">Connect with Us!</h1>
+          <p>Do not miss our future updates. Get
+            Subscribe today!</p>
+          <div class="mt-8 space-x-0.5">
+            <a href="https://www.instagram.com/adimchinaobi9/?__pwa=1#">
+              <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/2348169270270"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/emmanuel-adimchinaobi"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="tel:+2348067449346"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:chimnaonuel@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/Emmanueladimchinaobi"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t mt-16"></div>
+      <div class="text-center">© Copyright 2025 National Obstetric Fistula Centre, Abakaliki. -- All Right Reserved</div>
+    </div>
+
+
+
+  </footer>
+  <script src="./script.js">
+
+</script> 
+</body>
+</html>

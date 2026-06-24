@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+  <nav  class="shadow-xl bg-white fixed z-50 top-0 left-0 w-full ">
+
+    <div class="max-w-7xl mx-auto px-6  ">
+
+      <div class="flex justify-between items-center h-16">
+
+
+        <div class="text-xl font-bold text-red-800">
+          NOFIC Abakiliki
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden  lg:flex  space-x-8 items-center">
+          <a  href="./index.html" class="text-red-600">Home</a>
+
+
+          <!-- About Dropdown -->
+          <li class="relative group list-none z-50">
+
+            <a href="#" class="text-red-600">
+              About ▼
+            </a>
+
+            <div
+              class="absolute top-full left-0 w-56 bg-white text-black rounded-lg shadow-xl hidden group-hover:block">
+
+              <a href="./About.html" class="block px-4 py-3 text-black hover:shadow-xl">
+                About NOFIC Abakiliki
+              </a>
+
+              <a href="./Aboutdesk.html" class="block px-4 py-3 text-black hover:shadow-xl">
+                About Medical Director's Desk</a>
+              <a href="./staff.html" class="block px-4 py-3 text-black hover:shadow-xl">
+                Management</a>
+            </div>
+
+          </li>
+          <!-------Department and services dropdown-->
+          <li class="relative group list-none z-50">
+
+            <a href="" class="text-black">
+              Department and services ▼
+            </a>
+
+            <div
+              class="absolute top-full left-0 w-56 bg-white text-black rounded-lg shadow-xl hidden group-hover:block">
+
+              <a href="./dept.html" class="block px-4 py-3 text-black hover:shadow-xl">
+                Department and units
+              </a>
+
+              <a href="./unit.html" class="block px-4 py-3 text-black hover:shadow-xl">
+                Services</a>
+            </div>
+
+          </li>
+          <!------updates dropdown-->
+          <li class="relative group list-none">
+
+            <a href="#" class="hover:text-red-600">
+              updates ▼
+            </a>
+
+            <div
+              class="absolute top-full left-0 w-56 bg-white text-black rounded-lg shadow-xl hidden group-hover:block z-50">
+
+              <a href="./news.html" class="block px-4 py-3 text-black hover:shadow-xl">
+                News
+              </a>
+
+              <a href="#" class="block px-4 py-3 text-black hover:shadow-xl">
+                Publication</a>
+
+              <a href="#" class="block px-4 py-3 text-black hover:shadow-xl">
+                Vaccancy
+              </a>
+
+            </div>
+
+          </li>
+
+          <a href="#training" class="text-black hover:text-red-600">Training</a>
+          <a href="./contact.html" class="text-black hover:text-red-600">Contact us</a>
+          <a href="" class="text-black hover:text-red-600">Donate</a>
+          <a><i class="fa-solid fa-magnifying-glass"></i></a>
+
+
+
+        </div>
+
+
+
+        <!-- Hamburger Button -->
+        <div class=" lg:hidden flex gap-2 items-center ">
+          <button id="menu-btn" class="flex flex-col space-y-1 ">
+            <span class="w-6 h-0.5 bg-black"></span>
+            <span class="w-6 h-0.5 bg-black"></span>
+            <span class="w-6 h-0.5 bg-black"></span>
+          </button>
+          <button> <a><i class="fa-solid fa-magnifying-glass "></i></a></button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden lg:hidden  px-6 pb-4 absolute top-full left-0 z-50 bg-white shadow-xl ">
+
+      <ul class="flex flex-col ">
+
+        <li>
+          <a href="./index.html" class="block px-6 py-4 border-b border-zinc-700 ">
+            Home
+          </a>
+        </li>
+
+        <!-- ABOUT Dropdown -->
+        <li>
+
+          <button id="services-btn"
+            class="w-full text-left px-6 py-4 border-b border-zinc-700 flex justify-between z-50">
+            About ▼
+          </button>
+
+          <div id="services-menu" class="hidden bg-white">
+
+            <a href="./About.html" class="block px-10 py-3 hover:shadow-xl">
+              About NOFIC Abakiliki
+            </a>
+
+            <a href="./Aboutdesk.html" class="block px-10 py-3 hover:shadow-xl">
+              Medical Director Desk
+            </a>
+
+            <a href="./staff.html" class="block px-10 py-3 hover:shadow-xl">
+              Management 
+            </a>
+
+          </div>
+
+        </li>
+        <!-- Department and services dropdown -->
+        <li>
+
+          <button id="services-btn2" class="w-full text-left px-6 py-4 border-b border-zinc-700 flex justify-between  ">
+            Department and services ▼
+          </button>
+
+          <div id="services-menu2" class="hidden bg-white shadow-2xl">
+
+            <a href="./dept.html" class="block px-10 py-3 hover:shadow-xl">
+              Department and Unit.
+            </a>
+
+            <a href="./unit.html" class="block px-10 py-3 hover:shadow-xl">
+              Services
+            </a>
+
+
+          </div>
+
+        </li>
+        <!-----updates dropdown-->
+        <li>
+
+          <button id="services-btn3" class="w-full text-left px-6 py-4 border-b border-zinc-700 flex justify-between ">
+            Updates ▼
+          </button>
+
+          <div id="services-menu3" class="hidden bg-white shadow-2xl">
+
+            <a href="./news.html" class="block px-10 py-3 hover:shadow-xl">
+              News
+            </a>
+
+            <a href="#" class="block px-10 py-3 hover:shadow-xl">
+              Publication</a>
+            <a href="#" class="block px-10 py-3 hover:shadow-xl">
+              Vaccancy</a>
+
+
+          </div>
+
+        </li>
+        <li>
+          <a href="#training" class="block px-6 py-4 border-b border-zinc-700 ">
+            Training
+          </a>
+        </li>
+
+        <li>
+          <a href="./contact.html" class="block px-6 py-4">
+            Contact us
+          </a>
+        </li>
+        <li>
+          <a href="#" class="block px-6 py-4">
+            Donate
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+
+
+  </nav>
+<div  class="h-auto">
+    
+    <div class="max-w-7xl mx-auto px-6 pt-20 ">
+        <div class="flex flex-col justify-center items-center  ">
+             <div class=" flex-col  w-75 p-5   ">
+            <img
+              src="./img/Alfridah Kgabo Matse_ Transforming Dental Health and Empowering Communities in South Africa.jfif ">
+            <div class="bg-white p-5 hover:bg-pink-300">
+              <p>Dr.winner</p>
+              <p>Medical Director/CEO</p>
+            </div>
+
+        </div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident autem reprehenderit 
+    corporis natus saepe nam fuga, laboriosam accusamus laudantium magnam est at alias laborum dicta excepturi corrupti eveniet ab quas.</p>
+    <p >
+The Centre expanded to treating patients from neighbouring states in the South East region and was hence upgraded to South East
+ Fistula Centre, Abakaliki. This finally gave birth to our Centre as the first National Obstetric Fistula Centre in Nigeria in 2011.
+
+Following the above development, the Federal Government of Nigeria appointed its pioneer Medical Director, Prof. Ilogbeun. Sunday-Adeoye 
+(2011 – 2019), where together with about ninety-six inherited staff from Ebonyi State civil service, ensured the implementation of the 
+Centre’s mandate, which includes being a national reference Centre for free Treatment, Training, Rehabilitation, Research, and Prevention of
+ obstetrics fistula. The Federal Government of Nigeria has ensured recruitment of additional staff for efficient service delivery, with the 
+ staff strength currently standing at one hundred and ninety-four staff. Following the expiration of the tenure of the pioneer Medical
+  Director, in May, 2019, a new Medical Director, Professor Johnson Akuma Obuna was appointed to take charge of the affairs of the hospital.
+   He is currently the Chief Executive Officer of the Centre.
+
+In terms of service delivery, National Obstetric Fistula Centre, Abakaliki has between 2008 – 2010, caused the surgical repair of over one
+
+ thousand obstetrics fistula cases from twenty (20) states of the federation. For the period 2010 – 2019, over three thousand (3,000) 
+ obstetric fistula clients have been successfully repaired, in addition to surgical treatment of one thousand (1,000) uterine prolapse.
+</p>
+
+<p>In the areas of training, the Centre is the designated Centre for training of medical doctors and specialists, nurses and other paramedicals
+ from teaching hospitals and other healthcare facilities on obstetric fistula management. The Centre has recently obtained approval from 
+ Ebonyi State University, in line with its mandate, to run post graduate degree programmes in Obstetric Fistula, Assisted Reproductive 
+ Technology, Reproductive Health, Nursing Oncology and Rural Medicine. It also undertakes the teaching through rotational postings of 
+ medical, nursing students and other paramedicals from universities at both national and subnational levels.
+
+Currently, over fifty (50) medical doctors and nurses and more than two hundred (200) under-graduate medical and nursing students have
+ successfully been trained in the Centre, in the past five years. The postgraduate degree programmes is expected to be operational by 2020.
+
+Rehabilitation services are offered to repaired fistula clients. The Department of Social Works with support from Federal Ministry of 
+Women Affairs and Social Development, other MDAs and organisations have trained repaired clients on tailoring, bakery, weaving, bead-making,
+ hair dressing, soap /detergent/perfume production, etc. Efforts are on to establish relationship with conditional grants schemes to support
+  repaired clients to access funds for corporative and small scale businesses in order to support, champion and sustain maternal health 
+  among rural dwellers.</p>
+
+<p >
+    Currently the Centre has provided free treatment for over 2000 women from over twenty states of the federation (including Ebonyi, Abia, 
+Anambra, Imo, Enugu, Edo, Rivers, Akwa Ibom, Cross River, Bayelsa, Delta, Kogi, kwara, Benue, Lagos, Ogun, Ekiti, Osun, Oyo, Ondo, Bauchi, 
+Abuja) with genital fistula including free feeding, investigation, surgery, medications etc.</p>
+
+<p>The Centre has continued to champion multidisciplinary research not only among staff, but also with universities in clinical and public 
+health evidence-based intervention in Obstetric Fistula and Maternal Health in the African sub-region. With works published, and good number
+ of universities sending their students at all levels for their researches, we hope to capture the interest of international research
+  institutions and universities to support research in the Centre.</p>
+    </div>
+    </div>
+</div>
+    <!-----footer-->
+  <footer class="h-auto bg-green-700 p-5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:flex-wrap  justify-between items-center h-auto gap-2  mt-10 ">
+
+        <div class=" flex-col  w-75 p-5  h-50 text-white ">
+          <h1 class="font-extrabold text-2xl">NOFIC</h1>
+          <p class="flex item-center gap-2">
+            <i class="fa-solid fa-location-pin mt-2"></i>KM 86, Enugu-Abakaliki Expressway, Abakaliki, Ebonyi State.</p>
+          <p class="flex item-center gap-2"><i class="fa-regular fa-envelope mt-1"></i>chimnaonuel@gmail.com</p>
+          <p class="flex item-center gap-2"><i class="fa-solid fa-phone-volume mt-1"></i>08167448562</p>
+        </div>
+
+
+
+        <div class=" flex-col  w-75 p-5  h-50 text-white ">
+          <h1 class="font-extrabold text-2xl">About us</h1>
+          <ul>
+            <li>About</li>
+            <li>Careers</li>
+            <li>services</li>
+            <li>FAQ</li>
+            <li>Appointment</li>
+            <li>Events</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+
+
+
+
+
+
+        <div class=" flex-col  w-75 p-5  h-50 text-white ">
+          <h1 class="font-extrabold text-2xl">Trending Events</h1>
+          <ul>
+            <li>NOFIC Exam List for…</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-calendar"></i>June 15, 2026</li>
+            <li>NOFIC 2026 Shortlisted Interns…</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-calendar"></i>June 10, 2026</li>
+            <li>NOFIC Abakaliki 2026 Internship…</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-calendar"></i>June 10, 2026</li>
+
+          </ul>
+        </div>
+
+
+        <div class=" flex-col  w-75 p-5  h-50  text-white ">
+          <h1 class="font-extrabold text-2xl">Connect with Us!</h1>
+          <p>Do not miss our future updates. Get
+            Subscribe today!</p>
+          <div class="mt-8 space-x-0.5">
+            <a href="https://www.instagram.com/adimchinaobi9/?__pwa=1#">
+              <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/2348169270270"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/emmanuel-adimchinaobi"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="tel:+2348067449346"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:chimnaonuel@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/Emmanueladimchinaobi"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t mt-16"></div>
+      <div class="text-center">© Copyright 2025 National Obstetric Fistula Centre, Abakaliki. -- All Right Reserved</div>
+    </div>
+
+
+
+  </footer>
+   <script src="./script.js">
+
+</script>
+
+</body>
+</html>
